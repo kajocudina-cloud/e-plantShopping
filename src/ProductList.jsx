@@ -245,12 +245,7 @@ function ProductList({ onHomeClick }) {
         setShowCart(false);
     };
 
-    const handleAddToCart = (plant) => {
-        // This sends the plant object to your Redux slice
-        dispatch(addItem(plant));
-    };
-
-    return (
+        return (
         <div>
             <div className="navbar" style={styleObj}>
                 <div className="tag">
