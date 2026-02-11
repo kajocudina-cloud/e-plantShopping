@@ -6,6 +6,9 @@ import { addItem } from './CartSlice';
 
 function ProductList({ onHomeClick }) {
     const dispatch = useDispatch();
+    const handleAddToCart = (plant) => {
+        dispatch(addItem(plant)); // Requirement 1: Uses addItem action to add product
+    };
     const cart = useSelector(state => state.cart.items);
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); 
@@ -243,6 +246,7 @@ function ProductList({ onHomeClick }) {
     };
 
     const handleAddToCart = (plant) => {
+        // This sends the plant object to your Redux slice
         dispatch(addItem(plant));
     };
 
