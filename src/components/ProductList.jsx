@@ -41,6 +41,7 @@ function ProductList({ onHomeClick }) {
 
                     cost: "$15"
 
+                    
                 },
 
                 {
